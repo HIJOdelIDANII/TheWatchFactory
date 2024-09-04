@@ -1,0 +1,22 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #ffffff;
+    color: #ea9595;
+    height: 60px;
+}
+.navbar-container a {
+    color: inherit; /* Removes default link color */
+    text-decoration: none; /* Removes underline */
+  }
+.navbar-container a:hover {
+    color: inherit; /* Keeps color unchanged on hover */
+}
+.navbar-container a:visited {
+    color: inherit; /* Keeps color unchanged for visited links */
+}
+.navbar-container a:active {
+    color: inherit; /* Keeps color unchanged when the link is clicked */
+}

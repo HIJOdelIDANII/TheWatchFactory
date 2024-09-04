@@ -1,4 +1,4 @@
-import "./temoignages.css"
+import "./Temoignages.css"
 
 export const Temoignages = ()=>{
     return(
