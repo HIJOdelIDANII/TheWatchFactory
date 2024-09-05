@@ -17,6 +17,7 @@ function App() {
       <BrowserRouter>
         <Navbar></Navbar>
         <Routes>
+         
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/devis-reparation" element={<DevisRepar></DevisRepar>} ></Route>
           <Route path="/reparation-montres" element={<Reparation></Reparation>}></Route>

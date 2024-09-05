@@ -1,22 +1,154 @@
-.navbar-container {
+.navbar-container{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    
+    height:20vh;
+    
+    background: white;
+    
+}
+.logo-link{
+    text-decoration: none;
+    color:inherit;
+}
+.links-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 20px;
-    background-color: #ffffff;
-    color: #ea9595;
-    height: 60px;
+    color:#2D5475;
+    
+    
 }
-.navbar-container a {
+.image-logo-container{
+    /**/
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:20vh;
+    margin-top:2vh;
+    margin-left:20px;
+    margin-right:20px;
+    
+    
+    
+}
+.logo-image{
+    
+    object-fit: contain;
+    max-height: 80px;
+    width:auto;
+    
+
+}
+.title{
+    font-family: 'Times New Roman', serif;
+    font-weight: 600;
+    font-size:24px;
+    margin-bottom: 0;
+    margin-top:2px;
+    color:hsl(208, 44%, 22%);
+    
+}
+.slogan{
+    font-family: 'Cursive', 'Brush Script MT', sans-serif;
+    font-size: 20px;
+    margin-top:0px;
+    margin-bottom:20px;
+    color:hsl(0, 90%, 40%);
+}
+
+.links-container a {
+    
+    font-size: 20px;
     color: inherit; /* Removes default link color */
     text-decoration: none; /* Removes underline */
   }
-.navbar-container a:hover {
+.links-container a:hover {
     color: inherit; /* Keeps color unchanged on hover */
 }
-.navbar-container a:visited {
+.links-container a:visited {
     color: inherit; /* Keeps color unchanged for visited links */
 }
-.navbar-container a:active {
+.links-container a:active {
     color: inherit; /* Keeps color unchanged when the link is clicked */
 }
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  .bentham-regular {
+    font-family: "Bentham", serif;
+    font-weight:500;
+    font-style: normal;
+  }
