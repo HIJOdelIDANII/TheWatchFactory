@@ -1,8 +1,13 @@
 import "./Navbar.css";
 import {Link} from "react-router-dom";
-
+import {useState} from "react";
 import logo from "../../images/image.png"
 export const Navbar = ()=>{
+    const [toggle1,setToggle1] = useState(false);
+    const handleToggle1 = (e)=>{
+        e.currentTarget.blur();  // Remove focus after click
+        setToggle1(!toggle1);
+    }
     return(
     <section className="navbar">
         <div className="navbar-container">
@@ -12,7 +17,7 @@ export const Navbar = ()=>{
                 <Link className="roboto-bold" to="/reparation-montres">Réparation</Link>
                 <Link className="roboto-bold" to="/devis-reparation">Devis de réparation</Link>
                     
-                <Link className="roboto-bold" to="/contact">Contact</Link>
+               
             </div>
             
             <div className="logo">
@@ -30,16 +35,21 @@ export const Navbar = ()=>{
             <div className="links-container right">
                 <Link className="roboto-bold" to="/vente-montres">Vente de montres</Link>
                 <Link className="roboto-bold" to="/temoignages">Témoignages</Link>
-                <Link className="roboto-bold" to="/about">About</Link>
+                <div className="toggle_button">
+                    <i onClick={(e)=>{handleToggle1(e)}} className="fa-solid fa-bars bars"></i>
+                </div>  
 
             </div> 
-                
+                  
             
         </div>
-        <div className="toggle_button">
-            <i class="fa-regular fa-bars"></i>
+        
+        <div className ={`toggle-extra-information-1 ${toggle1 ? "": "no-toggle-info-1"}`}> 
+            <Link  className="roboto-bold" to="about">à propos</Link>
+            <Link  className="roboto-bold" to="contact">contact</Link>
         </div>
-        <hr></hr>
+        
+       
     </section>
     )
 }
