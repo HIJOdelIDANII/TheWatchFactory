@@ -193,14 +193,20 @@
   
   
 }
-@media only screen  and (max-height = 600px) {
+@media only screen  and (max-height : 600px) {
 
 }
-@media only screen and (max-width =911px){
-    .links-container a{
-        font-size: 10px ;
-        font-weight: 200;
-    }
+@media only screen and (max-width : 911px){
+    .navbar-container{ width:75vw;}
+}
+@media only screen and (max-width : 911px){
+  .links-container a{
+    font-size: 16px;
+  }
+  .title{
+    font-size: 18px;
+    text-align: center;
+  }
 }
 .toggle-navbar{
   display: none;
