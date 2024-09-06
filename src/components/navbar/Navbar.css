@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     
-    height:20vh;
+    height:25vh;
     
     background: white;
     
@@ -20,16 +20,14 @@
     
     
 }
-.image-logo-container{
-    /**/
-}
+
 .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height:20vh;
-    margin-top:2vh;
+    margin-top:40px;
     margin-left:20px;
     margin-right:20px;
     
@@ -37,7 +35,6 @@
     
 }
 .logo-image{
-    
     object-fit: contain;
     max-height: 80px;
     width:auto;
@@ -119,8 +116,15 @@
     font-style: normal;
 }
 .bars{
-  color:#081a2a;
+  color:#752d2d;
   cursor: pointer;
+  
+  
+}
+.bars-removal{
+  display: none;
+}
+.toggle_button{
   
 }
 
@@ -146,19 +150,40 @@
 .no-toggle-info-1 {
   display: none;
 }
-@media only screen and (max-width:200px){
+
+@media only screen and (min-width:1068px){
+  .remove-link {display: none;}
+  .remove-bars-2 {display: none;}
+}
+
+@media only screen and (max-width:1067px){
   .navbar-container{
+    position: absolute;
     display: flex;
     flex-direction: column;
     height:100vh;
+    width: 35vw;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px #081a2a;
+
     flex-wrap: nowrap;
     background-color: #081a2a;/*#2D5475*/
   }
+  .bars{
+    color:#752d2d;
+  }
+  .remove-bars-1{
+    display: none;
+  }
+  .logo{order:1;}
+  .left{order:2; margin-bottom: 0px !important;}
+  .right{order:3; margin-top: 0px !important;}
   .links-container{
     flex-direction: column;
     height:40vh;
     color: white;
   }
+  
   .left{
     margin-bottom: 30px;
   }
@@ -166,4 +191,23 @@
     margin-top:30px;
   }
   
+  
+}
+@media only screen  and (max-height = 600px) {
+
+}
+@media only screen and (max-width =911px){
+    .links-container a{
+        font-size: 10px ;
+        font-weight: 200;
+    }
+}
+.toggle-navbar{
+  display: none;
+}
+.bars-phone{
+  left:20px;
+  top:20px;
+  position: absolute;
+  width:20px;
 }
