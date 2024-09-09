@@ -1,8 +1,9 @@
+
 .navbar-container{
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     
-    height:25vh;
+    height:26vh;
     
     background: white;
     
@@ -74,46 +75,46 @@
 .links-container a:active {
     color: inherit;
 }
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
   
 .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
   
 .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
   
 .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
 }
   
 .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
   
 .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 .bentham-regular {
-    font-family: "Bentham", serif;
-    font-weight:500;
-    font-style: normal;
+  font-family: "Bentham", serif;
+  font-weight:500;
+  font-style: normal;
 }
 .bars{
   color:#752d2d;
@@ -123,9 +124,6 @@
 }
 .bars-removal{
   display: none;
-}
-.toggle_button{
-  
 }
 
 .toggle-extra-information-1{
@@ -157,11 +155,18 @@
 }
 
 @media only screen and (max-width:1067px){
-  .navbar-container{
+  .navbar{
+    margin-left:10px;
+    height: 55vh;
+    z-index: 3;  
     position: absolute;
+  }
+  .navbar-container{
+    
+    
     display: flex;
     flex-direction: column;
-    height:100vh;
+    height:100%;
     width: 35vw;
     border-radius: 8px;
     box-shadow: 1px 1px 4px #081a2a;
@@ -171,6 +176,7 @@
   }
   .bars{
     color:#752d2d;
+    z-index: 3;
   }
   .remove-bars-1{
     display: none;
@@ -180,7 +186,7 @@
   .right{order:3; margin-top: 0px !important;}
   .links-container{
     flex-direction: column;
-    height:40vh;
+    height:30%;
     color: white;
   }
   

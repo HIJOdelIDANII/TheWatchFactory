@@ -5,9 +5,11 @@ import logo from "../../images/image.png"
 export const Navbar = ()=>{
     /* toggle1 for the pc version : clicking the three bars results in a div extra-info-1 (à propos contact) */
     /* toggle is for small tablets and smartphone to toggle the sidenavbar*/
-    const [toggle1,setToggle1] = useState(false);
-    const [toggle2,setToggle2] = useState(true);
 
+    const [toggle1,setToggle1] = useState(false);
+    const [toggle2,setToggle2] = useState(window.innerWidth  <1068? false: true);
+    
+    
     const handleToggle2 = (e)=>{
         setToggle2(!toggle2);
     }
@@ -16,7 +18,7 @@ export const Navbar = ()=>{
         setToggle1(!toggle1);
     }
     return(
-    <section className="navbar">
+    <navbar className="navbar">
         <div className = { `navbar-container ${toggle2? "": "toggle-navbar"} `}>
             
             <div className="links-container left">
@@ -64,6 +66,6 @@ export const Navbar = ()=>{
         </div>
         
        
-    </section>
+    </navbar>
     )
 }

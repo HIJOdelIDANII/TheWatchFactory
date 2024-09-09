@@ -1,0 +1,49 @@
+.ImageSlider-container{
+    height: 100%;
+}
+.slideshow-container{
+    height: 95%;
+    
+}
+.show-image{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-size:cover;
+    background-position: center;
+}
+.dots-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100px;
+    height:5%;
+    margin:auto auto 5px auto;
+    
+    
+}
+.dot{
+    cursor: pointer;
+    height: 13.5px;
+    width: 13.5px;
+    background-color: transparent;
+    border:2px solid hsl(0, 0%, 65%);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.dot:hover{
+    background-color: hsl(0, 0%, 65%);
+}
+.dot-selected{
+    background-color:hsl(0, 0%, 95%) ;
+    border-color: hsl(0, 0%, 95%)
+}
+.prev,.next{
+    font-size: 24px;
+}
+

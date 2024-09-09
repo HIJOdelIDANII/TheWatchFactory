@@ -1,4 +1,7 @@
 .home-container{
-    background-color: black;
-    height: 100vh;
+    
+    height: 74vh;
+}
+@media only screen and (max-width:1067px){
+    .home-container{ height:70vh}
 }
