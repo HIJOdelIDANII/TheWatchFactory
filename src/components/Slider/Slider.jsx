@@ -43,15 +43,19 @@ export const ImageSlider = ()=>{
         <div className="ImageSlider-container">
             <div className = "slideshow-container">
                 <div className="show-image" style={{backgroundImage:`url(${(slideImages[current-1]).url})`,height:"100%"}}>
+                    <div className="button-prev-next">
+                       <span className="prev" onClick={()=>plusSlides(-1)}>&#10094;</span>
+                        <span className="next" onClick={()=>plusSlides(1)}>&#10095;</span> 
+                    </div>
                     <div className="dots">
                         <div className={`dot ${current===1?"dot-selected":""}`} onClick={()=>setCurrent(1)}></div>
                         <div className={`dot ${current===2?"dot-selected":""}`} onClick={()=>setCurrent(2)}></div>
                         <div className={`dot ${current===3?"dot-selected":""}`} onClick={()=>setCurrent(3)}></div>
                         <div className={`dot ${current===4?"dot-selected":""}`} onClick={()=>setCurrent(4)}></div>
                     </div>
+                    
                 </div>
-                <span className="prev" onClick={()=>plusSlides(-1)}>&#10094;</span>
-                <span className="next" onClick={()=>plusSlides(1)}>&#10095;</span>
+                
             </div>   
         </div>
     )
