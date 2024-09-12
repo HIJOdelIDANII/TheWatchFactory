@@ -12,61 +12,53 @@ const slideImages = [
     
 ];
 
-export const ImageSlider = ()=>{
-    const [current,setCurrent] = useState(1);
-    const [plusClicked,setPlusClicked] = useState(false);
-    const showImage = ()=>{
-        const image = slideImages[current];
-        if(image){
-           return(<img src={`${slideImages[current].url}`} alt={current}></img>); 
-        }
-        return(<h1>notfound</h1>)
-    }
-    const plusSlides = (x)=>{
-        if (x == 1){
-            if (current < slideImages.length){
-                setCurrent(1+current);}
-
-            else {
-                setCurrent(1)
-            }
-        }
-        else {
-            if(current>1){
-                setCurrent(current-1)
-            }
-            else{
-                setCurrent(slideImages.length)
-            }
-        }
-        
+export const ImageSlider = () => {
+    const [current, setCurrent] = useState(1);
+  
+    const plusSlides = (x) => {
+      setCurrent((prev) => {
+        const next = prev + x;
+        return next > slideImages.length ? 1 : next < 1 ? slideImages.length : next;
+      });
     };
+  
     useEffect(() => {
-        const interval = setInterval(() => {
-          plusSlides(1); // Automatically moves to the next slide
-        }, 5000); // Change slide every 5 seconds
-    
-        return () => clearInterval(interval); // Clear interval on component unmount or re-render
-      }, [current]);
-    
+      const interval = setInterval(() => {
+        plusSlides(1);
+      }, 5000); 
+  
+      return () => clearInterval(interval);
+    }, [current]);
+  
     return (
-        <div className="ImageSlider-container">
-            <div className = "slideshow-container">
-                <div className="show-image" style={{backgroundImage:`url(${(slideImages[current-1]).url})`,height:"100%"}}>
-                    <div className="button-prev-next">
-                        <span className="prev" onClick={()=>{plusSlides(-1);setPlusClicked(true)}}>&#10094;</span>
-                        <span className="next" onClick={()=>{plusSlides(1);setPlusClicked(true)}}>&#10095;</span>
-                    </div>
-                    <div className="dots">
-                        <div className={`dot ${current===1?"dot-selected":""}`} onClick={()=>setCurrent(1)}></div>
-                        <div className={`dot ${current===2?"dot-selected":""}`} onClick={()=>setCurrent(2)}></div>
-                        <div className={`dot ${current===3?"dot-selected":""}`} onClick={()=>setCurrent(3)}></div>
-                        <div className={`dot ${current===4?"dot-selected":""}`} onClick={()=>setCurrent(4)}></div>
-                    </div>
-                    
-                </div>
-                
-            </div>   
+      <div className="ImageSlider-container">
+        <div className="slideshow-container">
+          {slideImages.map((slide, index) => (
+            <div
+              key={index}
+              className={`show-image ${current === index + 1 ? 'active' : ''}`}
+              style={{ backgroundImage: `url(${slide.url})` }}
+            >
+              {/* Slide content here */}
+            </div>
+          ))}
+  
+          <div className="button-prev-next">
+            <span className="prev" onClick={() => plusSlides(-1)}>&#10094;</span>
+            <span className="next" onClick={() => plusSlides(1)}>&#10095;</span>
+          </div>
+  
+          <div className="dots-container">
+            {slideImages.map((_, index) => (
+              <div
+                key={index}
+                className={`dot ${current === index + 1 ? 'dot-selected' : ''}`}
+                onClick={() => setCurrent(index + 1)}
+              ></div>
+            ))}
+          </div>
         </div>
-    )
-}
+      </div>
+    );
+  };
+  
