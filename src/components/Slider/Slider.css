@@ -13,7 +13,6 @@
     flex-direction: column;
     background-size:cover;
     background-position: center;
-    
 }
 .dots-container{
     display: flex;
@@ -45,8 +44,36 @@
     border-color: hsl(0, 0%, 95%)
 }
 .prev,.next{
-    font-size: 24px;
+    font-size: 28px;
     color:white;
     font-weight: lighter;
+    display: block;
+    cursor: pointer;
+    
+    width:30px;
+    text-align: center;
+    line-height: 80%;
+    
+}
+.prev:hover,.next:hover{
+    opacity:0.6
+}
+.button-prev-next{
+    position: relative;
+    height: 95%;
+    width: 100%;
+    
 }
 
+.prev{
+    position: absolute;
+    top: 50%;
+    left:4px;
+    transform: translateY(-50%);
+}
+.next{
+    position: absolute;
+    top: 50%;
+    right:4px;
+    transform: translateY(-50%);
+}

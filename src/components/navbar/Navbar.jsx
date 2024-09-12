@@ -18,7 +18,7 @@ export const Navbar = ()=>{
         setToggle1(!toggle1);
     }
     return(
-    <navbar className="navbar">
+    <div className="navbar">
         <div className = { `navbar-container ${toggle2? "": "toggle-navbar"} `}>
             
             <div className="links-container left">
@@ -66,6 +66,6 @@ export const Navbar = ()=>{
         </div>
         
        
-    </navbar>
+    </div>
     )
 }

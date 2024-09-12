@@ -1,5 +1,5 @@
 import "./Slider.css"
-import {useState} from 'react';
+import {useState ,useEffect} from 'react';
 import img1 from "../../images/omega.jpg"
 import img2 from "../../images/tissot.jpg"
 import img3 from "../../images/watchrepair1.jpg"
@@ -14,6 +14,7 @@ const slideImages = [
 
 export const ImageSlider = ()=>{
     const [current,setCurrent] = useState(1);
+    const [plusClicked,setPlusClicked] = useState(false);
     const showImage = ()=>{
         const image = slideImages[current];
         if(image){
@@ -22,30 +23,39 @@ export const ImageSlider = ()=>{
         return(<h1>notfound</h1>)
     }
     const plusSlides = (x)=>{
-        
         if (x == 1){
             if (current < slideImages.length){
                 setCurrent(1+current);}
 
             else {
-                setCurrent(x)
+                setCurrent(1)
             }
         }
         else {
             if(current>1){
                 setCurrent(current-1)
             }
-            else(setCurrent(slideImages.length))
+            else{
+                setCurrent(slideImages.length)
+            }
         }
         
-    }
+    };
+    useEffect(() => {
+        const interval = setInterval(() => {
+          plusSlides(1); // Automatically moves to the next slide
+        }, 5000); // Change slide every 5 seconds
+    
+        return () => clearInterval(interval); // Clear interval on component unmount or re-render
+      }, [current]);
+    
     return (
         <div className="ImageSlider-container">
             <div className = "slideshow-container">
                 <div className="show-image" style={{backgroundImage:`url(${(slideImages[current-1]).url})`,height:"100%"}}>
                     <div className="button-prev-next">
-                       <span className="prev" onClick={()=>plusSlides(-1)}>&#10094;</span>
-                        <span className="next" onClick={()=>plusSlides(1)}>&#10095;</span> 
+                        <span className="prev" onClick={()=>{plusSlides(-1);setPlusClicked(true)}}>&#10094;</span>
+                        <span className="next" onClick={()=>{plusSlides(1);setPlusClicked(true)}}>&#10095;</span>
                     </div>
                     <div className="dots">
                         <div className={`dot ${current===1?"dot-selected":""}`} onClick={()=>setCurrent(1)}></div>
