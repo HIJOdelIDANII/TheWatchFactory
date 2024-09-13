@@ -119,6 +119,7 @@
 .bars{
   color:#752d2d;
   cursor: pointer;
+  z-index: 4;
   
   
 }

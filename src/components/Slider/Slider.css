@@ -17,7 +17,7 @@
     flex-direction: column;
     background-size: cover;
     background-position: center;
-    position: absolute; 
+    position: absolute; /* Each slide is positioned absolutely */
     top: 0;
     left: 0;
     width: 100%;
@@ -28,10 +28,43 @@
 
 .show-image.active {
     opacity: 1; 
-    z-index: -1; 
+    z-index: 2; 
+}
+.caption-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: absolute;
+    bottom: 10%; /* Adjust the position */
+    width: 100%;
+    text-align: center;
+    
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Fade effect */
 }
 
+.show-image.active .caption-container {
+    opacity: 1; /* Show the caption background and text on active */
+}
 
+/* Styling for the captions */
+.caption1 {
+    width: 72%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.caption2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
 .dots-container {
     z-index:5;
     display: flex;
