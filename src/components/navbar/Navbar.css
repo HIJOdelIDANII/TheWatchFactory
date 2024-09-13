@@ -43,7 +43,6 @@
 
 }
 .title{
-    font-family: 'Times New Roman', serif;
     font-weight: 600;
     font-size:24px;
     margin-bottom: 0;
@@ -158,8 +157,8 @@
 @media only screen and (max-width:1067px){
   .navbar{
     margin-left:10px;
-    height: 55vh;
-    z-index: 3;  
+    height: 57vh;
+    z-index: 10;  
     position: absolute;
   }
   .navbar-container{
@@ -219,8 +218,25 @@
   display: none;
 }
 .bars-phone{
-  left:20px;
-  top:20px;
-  position: absolute;
-  width:20px;
+  
+  font-size: 20px;
+}
+.theWatchFactory{
+    font-family:"Brush Script MT","Garamond", cursive;
+    font-weight: 900;
+    font-size:24px;
+    color:#752d2d;
+    padding-left: 8px;
+}
+.miniNavbar{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.miniLogo{
+  display: block;
+  width: 50px;
+  margin-left: 50px;
 }

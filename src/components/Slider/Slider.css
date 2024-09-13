@@ -51,19 +51,31 @@
 
 /* Styling for the captions */
 .caption1 {
+    font-family: "Playfair Display",serif;
     width: 72%;
     background-color: rgba(0, 0, 0, 0.5);
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: bold;
     color: white;
+    transform: translateY(-50px); /* Move down initially */
+    transition: transform 1s ease, opacity 1s ease-in-out;
+}
+.show-image.active .caption1 {
+    transform: translateY(0); /* Slide down into view */
 }
 
 .caption2 {
+    font-family: serif;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
-    font-size: 20px;
+    font-size: 35px;
     color: white;
     margin-top: 10px;
+    transform: translateY(50px); /* Move down initially */
+    transition: transform 1s ease, opacity 1s ease-in-out;
+}
+.show-image.active .caption2 {
+    transform: translateY(0); /* Slide up into view */
 }
 .dots-container {
     z-index:5;

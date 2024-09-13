@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import {Link} from "react-router-dom";
 import {useState} from "react";
+import miniLogo from "../../images/background2.ico"
 import logo from "../../images/image.png"
 export const Navbar = ()=>{
     /* toggle1 for the pc version : clicking the three bars results in a div extra-info-1 (à propos contact) */
@@ -56,8 +57,13 @@ export const Navbar = ()=>{
             </div> 
                   
         </div>
-        <div className ={`bars-phone ${toggle2? "bars-removal": "bars"} `} >
-            <i onClick={(e)=>{handleToggle2(e)}} className="fa-solid fa-bars bars"></i>
+        <div className ={`${toggle2? "bars-removal": "miniNavbar"}`}>
+            <div className ="bars-phone bars" >
+                <i onClick={(e)=>{handleToggle2(e)}} className="fa-solid fa-bars bars"></i>
+            </div>
+            
+            <div className ="theWatchFactory "> THE WATCH FACTORY </div>
+            <img className="miniLogo"src={miniLogo} alt="mini logo"></img>
         </div>
         
         <div className ={`remove-bars-1 toggle-extra-information-1 ${toggle1 ? "": "no-toggle-info-1"}`}> 
