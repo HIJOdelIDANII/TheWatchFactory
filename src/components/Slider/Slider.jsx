@@ -6,7 +6,7 @@ import img3 from "../../images/watchrepair1.jpg"
 import img4 from "../../images/watchrepair2.jpg"
 const slideImages = [
     {  url: img1,caption1: 'Techniciens Horlogers Experts',caption2:'Experience, Talent, et Perfection'},
-    {  url: img4,caption1: 'Plus de 500 Clients Satisfaits en 2024',caption2:'Découvrez un Service de Qualité, Rapide et Fiable'},
+    {  url: img4,caption1: 'Plus de 350 Clients Satisfaits en 2024',caption2:'Découvrez un Service de Qualité, Rapide et Fiable'},
     {  url: img3,caption1: 'Réparations sur Site',caption2:'Réparez Votre Montre sans Vous Déplacer'},
     {  url: img2,caption1: 'Réparations Précises, Service Rapide',caption2:'Réparations Horlogères Expert'}
     
@@ -23,11 +23,11 @@ export const ImageSlider = () => {
     };
   
     useEffect(() => {
-      const interval = setInterval(() => {
+      const interval = setTimeout(() => {
         plusSlides(1);
       }, 5000); 
   
-      return () => clearInterval(interval);
+      return () => clearTimeout(interval);
     }, [current]);
   
     return (
@@ -40,8 +40,8 @@ export const ImageSlider = () => {
               style={{ backgroundImage: `url(${slide.url})` }}
             >
                 <div className="caption-container">
-                    <div className="caption1">{slide.caption1}</div>
-                    <div className="caption2">{slide.caption2}</div>
+                    <div className="caption caption1">{slide.caption1}</div>
+                    <div className="caption caption2">{slide.caption2}</div>
                 </div>
             </div>
           ))}
