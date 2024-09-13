@@ -61,7 +61,6 @@ export const Navbar = ()=>{
             <div className ="bars-phone bars" >
                 <i onClick={(e)=>{handleToggle2(e)}} className="fa-solid fa-bars bars"></i>
             </div>
-            
             <div className ="theWatchFactory "> THE WATCH FACTORY </div>
             <img className="miniLogo"src={miniLogo} alt="mini logo"></img>
         </div>

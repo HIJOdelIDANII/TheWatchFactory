@@ -156,7 +156,8 @@
 
 @media only screen and (max-width:1067px){
   .navbar{
-    margin-left:10px;
+    margin-right:10px;
+    margin-left: auto;
     height: 57vh;
     z-index: 10;  
     position: absolute;
@@ -220,23 +221,31 @@
 .bars-phone{
   
   font-size: 20px;
+  margin-left: 5px;
 }
 .theWatchFactory{
     font-family:"Brush Script MT","Garamond", cursive;
     font-weight: 900;
     font-size:24px;
     color:#752d2d;
-    padding-left: 8px;
+    
 }
 .miniNavbar{
   margin-top: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  width: 100vw;
 }
 .miniLogo{
   display: block;
   width: 50px;
-  margin-left: 50px;
+  margin-right: 5px;
+}
+@media only screen and (max-width:381px){
+  .theWatchFactory{
+    font-size: 20px;
+  }
+  .miniLogo{width:28px;}
 }
