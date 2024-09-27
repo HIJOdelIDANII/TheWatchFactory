@@ -54,7 +54,7 @@
     font-family: "Playfair Display",serif;
     width: 72%;
     background-color: rgba(0, 0, 0, 0.5);
-    font-size: 4.5rem;
+    font-size: 3.7rem;
     font-weight: bold;
     color: white;
     transform: translateY(-50px); /* Move down initially */
@@ -68,7 +68,7 @@
     font-family: serif;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     margin-top: 10px;
     transform: translateY(50px); /* Move down initially */
