@@ -1,3 +1,6 @@
+import "./OurHistory.css"
+import image1 from "../../images/watcher-aesthetic.jpg"
+import image2 from "../../images/cartier-tank-solo-watch.jpg"
 export const OurHistory = () =>{
 
     return(
@@ -6,8 +9,8 @@ export const OurHistory = () =>{
             <p className="notre-histoire">Notre Histoire</p>
             <p className="ilya">Établi en 1999 , Plus de 25 ans d'expérience dans le domaine de l'horlogerie.</p>
         </div>
-        <div className="History-part1">
-            <p className="text-part1">
+        <div className="Hist-mini-cont History-part1">
+            <p className="Hist-text text-part1">
                 The Watch Factory est une entreprise indépendante de réparation de montres avec Neira Rais, la propriétaire et technicienne entièrement formée, offrant des réparations et des services de haute qualité aux clients,
                  avec un service postal de retour où qu'ils se trouvent en Tunisie.<br></br><br></br>
 
@@ -18,10 +21,10 @@ export const OurHistory = () =>{
                  nous remplacerons les piles de montres et effectuerons l'étanchéité pendant que vous attendez.
                  Nous effectuons presque toutes les autres réparations de montres sous 10 jours. Les réparations mineures sont généralement terminées en 24 heures.
             </p> 
-            <img alt="part1"></img>
+            <img className="Hist-img image-part1" alt="part1" src={image2}></img>
         </div>
-        <div className="History-part2">
-            <p className="text-part2">
+        <div className="Hist-mini-cont History-part2">
+            <p className="Hist-text text-part2">
                 Horaires<br></br><br></br>
 
                 Lundi : 08:00 - 18:00<br></br>
@@ -36,7 +39,7 @@ export const OurHistory = () =>{
                 <br></br><br></br>
                 Nous sommes situés au Colisée Tunis Centre Ville, Tunis, Tunisie.
             </p>
-            <img alt="part2"></img>
+            <img className="Hist-img image-part2" alt="part2" src={image1}></img>
         </div>
 
     </div>)
