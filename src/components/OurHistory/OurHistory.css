@@ -1,20 +1,36 @@
+:root{
+    --primary-color: hsl(208, 44%, 22%);
+}
 .History-container{
     display: flex;
     flex-direction: column;
 }
 
 .History-Title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    
 }
+
 .notre-histoire,.ilya{text-align: center;}
+
+.notre-histoire{
+    font-family:"Playfair Display";
+    font-size: 45px;
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.ilya{
+    font-family: "Playfair Display";
+    font-style: italic;
+    margin-top:2px;
+}
+
 .Hist-mini-cont{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: space-around;
 }
 .Hist-text{
@@ -22,5 +38,5 @@
 }
 .Hist-img{
     border-radius: 2px;
-    width: 29vw;
+    width: 300px;
 }
