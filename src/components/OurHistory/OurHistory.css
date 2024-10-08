@@ -1,5 +1,6 @@
 :root{
     --primary-color: hsl(208, 44%, 22%);
+    --secondary-color: hsl(212, 88%, 13%);
 }
 .History-container{
     display: flex;
@@ -8,6 +9,7 @@
 
 .History-Title{
     display: block;
+    margin-bottom: 50px;
     
 }
 
@@ -25,18 +27,49 @@
     font-style: italic;
     margin-top:2px;
 }
-
+.History-part2{
+    margin-top:50px;
+}
 .Hist-mini-cont{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     /*align-items: center;*/
-    justify-content: space-around;
+    justify-content: center;
+    gap:50px;
+    
 }
 .Hist-text{
-    width:60vw;
+    width:30vw;
+    min-width:300px;
+    font-family: Lato, cursive;
+    font-size: 17px;
+    color:hsl(0, 0%, 30%);
+    word-spacing: 5px;
+    margin-top: 0;
+    
+    
 }
 .Hist-img{
+    display: block;
     border-radius: 2px;
-    width: 300px;
+    width:30vw;
+    min-width:300px;
+    object-fit: cover;
+    max-height:300px;
+}
+text-part2{
+    text-align: center;
+}
+.marked-span-1{
+    font-weight: bolder;
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+.marked-span-2{
+    color:var(--primary-color);
+    
+}
+.numbers{
+    font-family: "Roboto Mono",monospace;
 }
