@@ -1,6 +1,6 @@
 .home-container{
     background-color: hsl(208, 100%, 98%);
-    height: 70vh;
+    
 }
 @media only screen and (max-width:1067px){
     .home-container{ height:70vh}

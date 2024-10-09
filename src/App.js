@@ -19,6 +19,7 @@ function App() {
       <BrowserRouter>
         
         <Navbar></Navbar>
+        <main>
         <Routes>
          
           <Route path="/" element={<Home></Home>}></Route>
@@ -31,7 +32,8 @@ function App() {
           <Route path="/404" element={<PageNotFound></PageNotFound>}></Route>
           <Route path="*" element={<Navigate to="/404" replace></Navigate>}></Route>
         </Routes>
-        <Footer></Footer>
+        </main>
+        
       </BrowserRouter>
     </div>
   );
