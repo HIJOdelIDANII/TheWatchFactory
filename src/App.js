@@ -10,12 +10,14 @@ import { Temoignages } from './pages/Temoignages/Temoignages.jsx';
 import { Reparation } from './pages/Reparation/Reparation.jsx';
 import { MontresVente } from './pages/MontresVente/MontresVente.jsx';
 import { Contact } from './pages/Contact/Contact.jsx';
+import {Footer} from './components/footer/Footer.jsx';
 import { useState } from 'react';
 function App() {
   return (
     <div className="App">
       
       <BrowserRouter>
+        
         <Navbar></Navbar>
         <Routes>
          
@@ -29,6 +31,7 @@ function App() {
           <Route path="/404" element={<PageNotFound></PageNotFound>}></Route>
           <Route path="*" element={<Navigate to="/404" replace></Navigate>}></Route>
         </Routes>
+        <Footer></Footer>
       </BrowserRouter>
     </div>
   );

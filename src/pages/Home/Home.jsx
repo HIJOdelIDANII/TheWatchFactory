@@ -6,6 +6,7 @@ export const Home = ()=>{
         <div className="home-container">
             <ImageSlider></ImageSlider>
             <OurHistory></OurHistory>
+            <div>Hello it's working here</div>
         </div>
     )
 }

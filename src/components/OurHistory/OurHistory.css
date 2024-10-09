@@ -5,6 +5,7 @@
 .History-container{
     display: flex;
     flex-direction: column;
+    background-color: hsl(208, 100%, 98%);
 }
 
 .History-Title{

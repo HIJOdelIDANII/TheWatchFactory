@@ -25,7 +25,7 @@ export const ImageSlider = () => {
     useEffect(() => {
       const interval = setTimeout(() => {
         plusSlides(1);
-      }, 5000); 
+      }, 6000); 
   
       return () => clearTimeout(interval);
     }, [current]);
