@@ -1,12 +1,13 @@
 .ImageSlider-container {
     height: 74vh;
     position: relative;
+    background-color: #335d6b;
 }
 
 .slideshow-container {
     height: 95%;
     position: relative;
-    overflow: hidden; /* Ensure the slides stay within bounds */
+    overflow: hidden; 
 }
 
 .show-image {
@@ -17,11 +18,12 @@
     flex-direction: column;
     background-size: cover;
     background-position: center;
-    position: absolute; /* Each slide is positioned absolutely */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     transition: opacity 1s ease-in-out; 
+    background-color: white;
     opacity: 0; 
     z-index: -1; 
 }
@@ -36,20 +38,19 @@
     align-items: center;
     
     position: absolute;
-    bottom: 10%; /* Adjust the position */
+    bottom: 10%; 
     width: 100%;
     text-align: center;
     
     padding: 20px;
     opacity: 0;
-    transition: opacity 1s ease-in-out; /* Fade effect */
+    transition: opacity 1s ease-in-out; 
 }
 
 .show-image.active .caption-container {
-    opacity: 1; /* Show the caption background and text on active */
+    opacity: 1; 
 }
 
-/* Styling for the captions */
 .caption1 {
     font-family: "Playfair Display",serif;
     width: 72%;

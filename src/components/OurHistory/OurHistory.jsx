@@ -9,6 +9,7 @@ export const OurHistory = () =>{
             <p className="notre-histoire">Notre Histoire</p>
             <p className="ilya">Établi en 1999 , Plus de 25 ans d'expérience dans le domaine de l'horlogerie.</p>
         </div>
+        <hr className="line"></hr>
         <div className="Hist-mini-cont History-part1">
             <p className="Hist-text text-part1">
                 The <span className="marked-span-1">Watch Factory</span> est une entreprise indépendante de réparation de montres avec Neira Rais, la propriétaire et technicienne entièrement formée, offrant des réparations et des services de haute qualité aux clients,
