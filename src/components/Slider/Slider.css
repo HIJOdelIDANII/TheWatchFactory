@@ -1,7 +1,7 @@
 .ImageSlider-container {
     height: 74vh;
     position: relative;
-    background-color: #335d6b;
+    background-color: hsl(208, 44%, 22%);
 }
 
 .slideshow-container {
