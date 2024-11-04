@@ -12,7 +12,7 @@ export const OurHistory = () =>{
         <hr className="line"></hr>
         <div className="Hist-mini-cont History-part1">
             <p className="Hist-text text-part1">
-                The <span className="marked-span-1">Watch Factory</span> est une entreprise indépendante de réparation de montres avec Neira Rais, la propriétaire et technicienne entièrement formée, offrant des réparations et des services de haute qualité aux clients,
+                <span className="marked-span-1">The Watch Factory</span> est une entreprise indépendante de réparation de montres avec Neira Rais, la propriétaire et technicienne entièrement formée, offrant des réparations et des services de haute qualité aux clients,
                  avec un service postal de retour où qu'ils se trouvent en Tunisie.<br></br><br></br>
 
                 Nous sommes entièrement formés pour réparer toutes les marques de montres de qualité, y compris<span className="marked-span-2"> Rolex, Tag Heuer, Omega, Seiko, Citizen, Gucci et Raymond Weil. </span>

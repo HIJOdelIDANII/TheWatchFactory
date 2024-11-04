@@ -24,8 +24,8 @@ export const WatchRepairTab = ()=>{
     
     return(
         <div className="pricing-section">
-            <h1>Watch Repair Pricing</h1>
-            <p>Select your watch brand to see pricing options, alternatively, you can <a className="link-to-pricing" href="#">request a repair quote</a> for your watch</p>
+            <h1>Tarifs de Réparation de Montres</h1>
+            <p>Sélectionnez la marque de votre montre pour voir les options de tarification. Vous pouvez également <a className="link-to-pricing" href="#">demander un devis de réparation</a> pour votre montre.</p>
             <Select placeholder="sélectionner la marque" className="select-container"options={options} />
         </div>
     )
