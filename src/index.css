@@ -3,5 +3,6 @@
 }
 body{
     margin:0;
-    
+    overflow-y: auto; /* Ensures vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }

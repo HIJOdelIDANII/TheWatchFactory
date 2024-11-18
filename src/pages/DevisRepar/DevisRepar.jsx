@@ -1,4 +1,5 @@
 import "./DevisRepar.css"
+import image1 from "../../images/watch-devis.png"
 export const DevisRepar =  () => {
     return(
         <div className="watch-repair-container">
@@ -12,8 +13,7 @@ export const DevisRepar =  () => {
             </div>
             
             <div className="watch-repair-image-container">
-                {/* Vous pouvez ajouter une balise image ici si vous avez une image du mouvement de la montre */}
-                {/* <img src="chemin-vers-image-montre.png" alt="Mouvement de Montre" /> */}
+                <img src={image1} className="watch-repair-image" alt="Mouvement de Montre" />
             </div>
             
         </div>

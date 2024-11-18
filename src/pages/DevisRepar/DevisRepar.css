@@ -1,4 +1,5 @@
 .watch-repair-container {
+    padding-top: 10px;
     background: linear-gradient(
         180deg, 
         hsl(208, 56%, 18%) 0%, 
@@ -6,23 +7,24 @@
         hsl(208, 44%, 32%) 100%
     );
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
+    align-items:start;
     justify-content: start;
-    height: 70vh;
+    min-height: 100vh;
+    flex-wrap: nowrap;
     
 }
 
   
 .title-repair-container {
-    font-size: 50px;
+    font-size: 47px;
     width:70%;
     font-family: "Playfair Display", serif;
     color: hsl(0, 0%, 95%);
 }
 .watch-repair-main-container{
-    width:70vw;
-    margin-left:10%;
+    width:75vw;
+    margin-left:8%;
 }
   
 .description {
@@ -53,8 +55,28 @@
     
 }
   
-.watch-image {
-    margin-top: 1.5em;
+.watch-repair-image-container {
+   width:33%;
     
 }
+.watch-repair-image{
+    display: block;
+    width:100%;
+    object-fit: contain;
+}
   
+@media only screen and (max-width:500px){
+    .watch-repair-image{
+        display: none;
+    }
+    .watch-repair-main-container{
+        width: 100vw;
+    }
+    .description {
+        width:100%;
+    }
+    .title-repair-container{
+        font-size:40px;
+        width:100%;
+    }
+}
