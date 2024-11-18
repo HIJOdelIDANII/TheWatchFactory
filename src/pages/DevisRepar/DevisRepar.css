@@ -1,0 +1,60 @@
+.watch-repair-container {
+    background: linear-gradient(
+        180deg, 
+        hsl(208, 56%, 18%) 0%, 
+        hsl(208, 44%, 28%) 50%, 
+        hsl(208, 44%, 32%) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 70vh;
+    
+}
+
+  
+.title-repair-container {
+    font-size: 50px;
+    width:70%;
+    font-family: "Playfair Display", serif;
+    color: hsl(0, 0%, 95%);
+}
+.watch-repair-main-container{
+    width:70vw;
+    margin-left:10%;
+}
+  
+.description {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color:white;
+    line-height: 1.6;
+    width:70%;
+}
+  
+.quote-button {
+    margin-top: 1.5em;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Playfair Display", serif;
+}
+  
+.quote-button:hover {
+    background-color: white;
+    color: hsl(208, 56%, 18%);
+    
+    
+}
+  
+.watch-image {
+    margin-top: 1.5em;
+    
+}
+  
