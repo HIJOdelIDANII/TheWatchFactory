@@ -2,17 +2,27 @@
     padding-top: 10px;
     background: linear-gradient(
         180deg, 
-        hsl(208, 56%, 18%) 0%, 
-        hsl(208, 44%, 28%) 50%, 
-        hsl(208, 44%, 32%) 100%
+        hsl(208, 56%, 16%) 0%, 
+        hsl(208, 50%, 22%) 10%,    
+        hsl(208, 50%, 25%) 20%,  
+        hsl(208, 44%, 29%) 40%,  
+        hsl(208, 44%, 29%) 60%,      
+        hsl(208, 44%, 25%) 80%,     
+        hsl(208, 44%, 22%) 100%      
     );
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     align-items:start;
     justify-content: start;
     min-height: 100vh;
     flex-wrap: nowrap;
     
+}
+.watch-repair-inner-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
   
@@ -64,6 +74,32 @@
     display: block;
     width:100%;
     object-fit: contain;
+}
+.watch-repair-details-container{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    width:100vw;
+    height: 95vh;
+}
+.image-repair-details{
+    display: block;
+    width:500px;
+    border-radius: 15px;
+}
+.description-repair-details{
+    width:50vw;
+}
+.contact-button{
+    color: hsl(208, 44%, 28%);
+    border-color: hsl(208, 44%, 28%);
+}
+.contact-button:hover{
+    background-color: hsl(208, 44%, 28%);
+    color:white;
 }
   
 @media only screen and (max-width:1110px){
