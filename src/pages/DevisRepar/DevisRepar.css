@@ -57,6 +57,7 @@
   
 .watch-repair-image-container {
    width:33%;
+   margin-top: 50px;
     
 }
 .watch-repair-image{
@@ -65,7 +66,7 @@
     object-fit: contain;
 }
   
-@media only screen and (max-width:500px){
+@media only screen and (max-width:1110px){
     .watch-repair-image{
         display: none;
     }
@@ -78,5 +79,8 @@
     .title-repair-container{
         font-size:40px;
         width:100%;
+    }
+    .watch-repair-container{
+        padding-top: 50px;
     }
 }
