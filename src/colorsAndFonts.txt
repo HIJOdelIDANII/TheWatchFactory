@@ -1,0 +1,4 @@
+hsl(208, 44%, 22%)
+
+font-family: "Raleway", sans-serif; #gotta be my best font
+font-family: "Playfair Display", serif;

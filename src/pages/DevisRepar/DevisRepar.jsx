@@ -37,6 +37,7 @@ export const DevisRepar =  () => {
                     <div className="title-description">Service d'expertise en réparation de montres</div>
                     <p className="test-description">
                         The Watch Factory est reconnue pour son expertise exceptionnelle dans la réparation de montres. Depuis plus de 40 ans, The Watch Factory propose des services de réparation en atelier et par correspondance à travers le Royaume-Uni, prenant en charge des modèles de montres de luxe, vintage et contemporains. 
+                        <br></br><br></br>
                         Si votre montre est endommagée ou présente un dysfonctionnement, nos techniciens certifiés diagnostiquent rapidement le problème et fournissent un devis gratuit, sans engagement. 
                         Pour une réparation rapide, rendez-vous dans nos centres de service situés à Tring ou à Thame pour une évaluation immédiate. Sinon, profitez de notre service postal exceptionnel pour une réparation simple et sans tracas.
                     </p>

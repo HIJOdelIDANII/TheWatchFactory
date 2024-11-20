@@ -84,6 +84,7 @@
     background-color: white;
     width:100vw;
     height: 95vh;
+    flex-wrap: wrap;
 }
 .image-repair-details{
     display: block;
@@ -92,6 +93,17 @@
 }
 .description-repair-details{
     width:50vw;
+}
+.small-title-description{
+    font-family: "Raleway", sans-serif;
+}
+.title-description{
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+}
+.test-description{
+    font-family:"Raleway", sans-serif;
+    line-height: 1.6;
 }
 .contact-button{
     color: hsl(208, 44%, 28%);
