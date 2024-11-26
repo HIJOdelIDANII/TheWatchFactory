@@ -87,6 +87,20 @@
 .dot.active {
     background-color: hsl(208, 44%, 29%);
 }
+.rating-stars {
+    display: flex;
+    gap: 5px; /* Add spacing between stars */
+}
+
+.custom-star {
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-star:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    cursor: pointer;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

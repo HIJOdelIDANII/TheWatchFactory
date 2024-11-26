@@ -77,40 +77,57 @@
 }
 
 /* Image Section */
-.watch-repair-image-container {
-    width: 35%; /* Image takes 35% of the width */
-    text-align: center; /* Center-align the image */
+.watch-repair-details-container {
+    margin-top:30px;
+    display: flex;
+    flex-direction: row; /* Keep text and image in the same line */
+    align-items: center; /* Center-align items vertically */
+    justify-content: space-between; /* Add space between text and image */
+    gap: 20px; /* Add spacing between items */
+    width: 95%; /* Full width of container */
+    padding: 20px; /* Add internal padding */
+    box-sizing: border-box; /* Include padding and border in dimensions */
+    background-color: white;
+    margin-bottom:26px;
+    border-radius:20px;
 }
 
-.watch-repair-image {
-    max-width: 100%; /* Make the image responsive */
+/* Text Section */
+.description-repair-details {
+    width: 55%; /* Text takes 55% of the width */
+    text-align: left; /* Align text to the left */
+    font-family: "Raleway", sans-serif;
+    line-height: 1.6;
+    overflow-wrap: break-word; /* Prevent text from overflowing */
+}
+
+.small-title-description {
+    font-size:14px;
+    color: #444;
+    margin-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title-description {
+    font-size: 28px;
+    font-family: "Playfair Display", serif;
+    color: hsl(0, 0%, 10%);
+    margin-bottom: 20px;
+}
+
+
+/* Image Section */
+.image-repair-details {
+    width: 40%; /* Image takes 40% of the width */
+    max-width: 100%; /* Ensure image scales within its container */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add rounded corners for a polished look */
+    border-radius: 10px; /* Optional rounded corners */
     display: block;
     margin: 0 auto; /* Center the image horizontally */
 }
 
-/* Details Container */
-.watch-repair-details-container {
-    margin-top: 45px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-    width: 100%; /* Full width */
-    padding: 20px; /* Add spacing */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    box-sizing: border-box; /* Include padding in size calculations */
-}
-
-/* Repair Details Image */
-.image-repair-details {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    margin-bottom: 20px; /* Add spacing */
-}
 
 /* Repair Details Text */
 .description-repair-details {
@@ -120,16 +137,8 @@
     margin-bottom: 20px;
 }
 
-.small-title-description {
-    font-family: "Raleway", sans-serif;
-    font-size: 20px;
-}
 
-.title-description {
-    font-family: "Playfair Display", serif;
-    font-size: 32px;
-    margin-bottom: 10px;
-}
+
 
 .test-description {
     font-family: "Raleway", sans-serif;
@@ -222,5 +231,45 @@
     .contact-button {
         font-size: 14px;
         width: 100%; /* Full-width button */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .watch-repair-details-container {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center; /* Center-align content */
+    }
+
+    .description-repair-details {
+        width: 90%; /* Full width for the text */
+        text-align: center; /* Center-align text */
+    }
+
+    .title-description {
+        font-size: 24px; /* Adjust font size for readability */
+    }
+
+    .test-description {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .image-repair-details {
+        width: 90%; /* Full width for the image */
+        margin-bottom: 20px; /* Add spacing below the image */
+    }
+}
+
+/* For Mobile Screens (Max Width: 480px) */
+@media only screen and (max-width: 480px) {
+    .description-repair-details {
+        font-size: 14px; /* Smaller text size for mobile */
+    }
+
+    .title-description {
+        font-size: 20px; /* Adjust title font size */
+    }
+
+    .image-repair-details {
+        width: 100%; /* Image takes full width */
     }
 }

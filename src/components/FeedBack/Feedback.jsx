@@ -1,6 +1,6 @@
 import './Feedback.css'
 import { useEffect, useState } from "react";
-
+import trustpilot from "./Trustpilot2.svg"
 export const Feedback = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -36,15 +36,33 @@ export const Feedback = () => {
         <div className="watch-repair-feedback">
             <h2 className="feedback-title">Excellent</h2>
             <div className="trustpilot-badge">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Trustpilot_star_logo.svg" alt="Trustpilot" />
+                <img src={trustpilot} alt="Trustpilot" />
             </div>
             <div className="feedback-carousel">
                 <div className="feedback-grid">
                     {visibleFeedbacks.map((val, index) => (
                         <div key={index} className="feedback-card">
                             <div className="rating-stars">
-                                {"⭐".repeat(Number(val.rating))}
-                            </div>
+    {Array.from({ length: Number(val.rating) }).map((_, index) => (
+        <svg
+            key={index}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            className="custom-star"
+        >
+           
+            <polygon
+                fill="#00B67A" /* Green color */
+                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+            />
+        </svg>
+    ))}
+</div>
+
+
+
                             <p className="feedback-comment">
                                 {val.comment || "Excellent service and very professional."}
                             </p>
