@@ -1,20 +1,11 @@
 import "./DevisRepar.css"
 import image1 from "../../images/watch-devis.png"
 import image2 from "../../images/Expert-Watch-Repair.png"
+import {Feedback} from "../../components/FeedBack/Feedback.jsx"
+import {Footer} from "../../components/footer/Footer.jsx"
 export const DevisRepar =  () => {
-    let ArrayRatings = [
-        {name:"ahmed",rating:"5",comment:""},
-        {name:"ahmed",rating:"5",comment:""},
-        {name:"ahmed",rating:"5",comment:""},
-        {name:"ahmed",rating:"5",comment:""},
-        {name:"ahmed",rating:"5",comment:""},
-        {name:"ahmed",rating:"5",comment:""},
-        {name:"ahmed",rating:"5",comment:""},
-        {name:"ahmed",rating:"5",comment:""},
-        {name:"ahmed",rating:"5",comment:""},
-        ];
-    
     return(
+        <div>
         <div className="watch-repair-container">
             <div className="watch-repair-inner-container">
                 <div className="watch-repair-main-container">
@@ -39,24 +30,16 @@ export const DevisRepar =  () => {
                         The Watch Factory est reconnue pour son expertise exceptionnelle dans la réparation de montres. Depuis plus de 40 ans, The Watch Factory propose des services de réparation en atelier et par correspondance à travers le Royaume-Uni, prenant en charge des modèles de montres de luxe, vintage et contemporains. 
                         <br></br><br></br>
                         Si votre montre est endommagée ou présente un dysfonctionnement, nos techniciens certifiés diagnostiquent rapidement le problème et fournissent un devis gratuit, sans engagement. 
-                        Pour une réparation rapide, rendez-vous dans nos centres de service situés à Tring ou à Thame pour une évaluation immédiate. Sinon, profitez de notre service postal exceptionnel pour une réparation simple et sans tracas.
+                        Pour une réparation rapide, rendez-vous dans nos centres de service situés à Tring ou à Thame pour une évaluation immédiate. Sinon, profitez de notre service postal exceptionnel pour une réparation simple et sans traces.
                     </p>
                     <button className="quote-button contact-button">Contact Us</button>
                     
                 </div>
             </div>
-            <div className="watch-repair-feedback">
-                {
-                    ArrayRatings.map(
-                        (val,index)=>(
-                        <div key={index} className="rating-container">
-                            <p className="name-rating"> {val.name}</p>
-                            <div className="rating-rating"> {val.rating} </div>
-                            <p className="comment-rating">{val.comment}</p>
-                        </div>))
-                }
-            </div>
-
+            
+        </div>
+        <Feedback></Feedback>
+        <Footer></Footer>
         </div>
         
     

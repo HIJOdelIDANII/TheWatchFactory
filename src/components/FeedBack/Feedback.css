@@ -1,0 +1,101 @@
+/* Feedback Section Styles */
+.watch-repair-feedback {
+    margin-top:20px;
+    width: 100%;
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+.feedback-title {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: hsl(208, 44%, 29%);
+}
+
+.trustpilot-badge img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.feedback-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.feedback-grid {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feedback-card {
+    background: hsl(0, 0%, 98%);
+    border: 1px solid hsl(208, 44%, 90%);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 350px;
+    min-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.rating-stars {
+    font-size: 20px;
+    color: #008f32; /* Trustpilot green */
+    margin-bottom: 10px;
+}
+
+.feedback-comment {
+    font-size: 16px;
+    color: hsl(208, 44%, 29%);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.customer-name {
+    font-weight: bold;
+    color: hsl(208, 44%, 29%);
+}
+
+.feedback-date {
+    font-size: 14px;
+    color: hsl(208, 44%, 50%);
+}
+
+/* Dots for Carousel */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: hsl(208, 44%, 90%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: hsl(208, 44%, 29%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feedback-grid {
+        gap: 10px;
+    }
+
+    .feedback-card {
+        min-width: 90%; /* Show one feedback card at a time */
+        max-width: 90%;
+    }
+}
